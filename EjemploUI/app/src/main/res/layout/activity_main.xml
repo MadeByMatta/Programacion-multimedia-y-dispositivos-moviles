@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="730dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/uploadPhotoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="68dp"
+            android:text="Upload photo"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmLabel" />
+
+        <TextView
+            android:id="@+id/meetDevsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="104dp"
+            android:text="MEETDEVS"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/codingLoveLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="148dp"
+            android:text="Coding with love"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/darkModeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="148dp"
+            android:text="Dark Mode"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="64dp"
+            android:text="Name"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codingLoveLabel" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#A391B3"
+            android:textColor="#673AB7"
+            android:textColorHint="#4A305D"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/darkModeLabel" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="54dp"
+            android:backgroundTint="#A391B3"
+            android:textColor="#673AB7"
+            android:textColorHint="#4A305D"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+
+        <EditText
+            android:id="@+id/confirmInput"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#A391B3"
+            android:textColor="#673AB7"
+            android:textColorHint="#4A305D"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/confirmLabel"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="76dp"
+            android:text="Password"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+
+        <TextView
+            android:id="@+id/confirmLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="64dp"
+            android:text="Confirm"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLabel" />
+
+        <TextView
+            android:id="@+id/geoLocalizationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:text="Allow geolocalization"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadPhotoLabel" />
+
+        <ImageView
+            android:id="@+id/darkModeIcon"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="44dp"
+            android:contentDescription="Dark mode icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/modoscuro" />
+
+        <ImageView
+            android:id="@+id/galleryIcon"
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="64dp"
+            android:contentDescription="Gallery icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmInput"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <Switch
+            android:id="@+id/geolocalizationSwitch"
+            android:layout_width="84dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="56dp"
+            android:checked="true"
+            android:thumbTint="#673AB7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/galleryIcon" />
+
+        <CheckBox
+            android:id="@+id/termsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="68dp"
+            android:checked="true"
+            android:text="I agree with Terms &amp; Conditions"
+            android:textColor="#0F0E10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geolocalizationSwitch" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="240dp"
+            android:layout_marginBottom="16dp"
+            android:text="Register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termsCheckBox" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/registerButton"
+            app:layout_constraintTop_toBottomOf="@+id/termsCheckBox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
